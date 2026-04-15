@@ -14,7 +14,7 @@ export default function Login() {
     if (token) {
         navigate("/tasks");
     }
-}, []);
+}, [navigate]);
     const login = async () => {
         try {
             const res = await API.post("/auth/login", {
